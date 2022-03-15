@@ -41,5 +41,7 @@
 ## 讓別人可以看到網頁，變成靜態網頁source
 * Settings > GitHub Pages > Source > master branch
 
+## 9 https://www.youtube.com/watch?v=stD3_Ke6blw&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=9
+
 # Git 遠端  Repository 操作
 * 線上講義https://quip.com/GL4gAFIc2KdI
