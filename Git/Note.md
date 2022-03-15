@@ -1,4 +1,4 @@
-六角學院youtube的Git、GitHub 教學
+六角學院youtube的Git、GitHub教學筆記
 # Git & GitHub 入門
 * 線上講義https://quip.com/pFUnA7u75HbL
 ## 終端機
@@ -32,6 +32,14 @@
 
 ## Sourcetree
 
+## 推資料上GitHub遠端數據庫 
+* 建立遠端數據庫
+* 在git bash輸入指令綁定資料夾
+* 在資料夾.git > config確認有無綁定
+* 在git bash輸入指令把資料推上去
+
+## 讓別人可以看到網頁，變成靜態網頁source
+* Settings > GitHub Pages > Source > master branch
 
 # Git 遠端  Repository 操作
 * 線上講義https://quip.com/GL4gAFIc2KdI
