@@ -1,4 +1,4 @@
-六角學院youtube的Git、GitHub教學筆記
+學習筆記-YouTube六角學院的Git、GitHub教學
 # Git & GitHub 入門
 * 線上講義https://quip.com/pFUnA7u75HbL
 ## 終端機
@@ -29,6 +29,8 @@
 * 觀察 commit 歷史紀錄： git log
 * 下載遠端數據庫： git clone 數據庫網址
 * 更新遠端數據庫： git push origin master
+   * push為更新遠端數據庫
+   * origin為遠端數據庫名稱
 
 ## Sourcetree
 
@@ -41,7 +43,24 @@
 ## 讓別人可以看到網頁，變成靜態網頁source
 * Settings > GitHub Pages > Source > master branch
 
-## 9 https://www.youtube.com/watch?v=stD3_Ke6blw&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=9
 
 # Git 遠端  Repository 操作
 * 線上講義https://quip.com/GL4gAFIc2KdI
+
+## 常用環境設定
+* 編輯器更換：git config --global core.editor "code --wait"
+* Git 縮寫：
+    * $ git config --global alias.co checkout
+    * $ git config --global alias.br branch
+    * $ git config --global alias.st status
+    * $ git config --global alias.ci commit
+      * git config：設定git的一些基礎設定
+      * --global：希望這台電腦都可以知道這個設定
+      * alias.st：要設定的關鍵字是st，會等於空白右邊的status
+* config --list 可以看是否改好
+* 觀看所有 config 的設定：
+    * Mac：~/.gitconfig
+    * Win：C:\Users\$USER
+
+## 11 https://www.youtube.com/watch?v=kajih2OHig0&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=11
+
