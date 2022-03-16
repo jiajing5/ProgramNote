@@ -17,3 +17,22 @@
 * %：相對單位，每個子元素透過「百分比」乘以父元素的 px 值。
 
 * 高寬度間距字用rem
+* 
+* Chrome不支持css字體小於12px的解決辦法
+ * .small-font{
+  font-size: 12px;
+  -webkit-transform: scale(0.5);
+}
+ * 兼容IE、FF要加上
+.smallsize-font{
+  Font-size: 6px;
+}
+  * transform:scale()這個屬性只可以縮放可以定義寬高的元素，而行內元素是沒有寬高的，我們可以加上一個display:inline-block;屬性
+
+* letter-spacing 字元間距控制 (每個字之間的距離控制)
+* word-spacing 單字間距控制 (每個單字之間空白區的大小控制)
+* white-space 空白區域處理
+
+* flex-grow：依照設定比例分配剩餘空間
+* flex-shrink：空間不夠時的壓縮比例
+* flex-basis：表示其預設分配到的空間，與 width 很像，但優先程度較高
