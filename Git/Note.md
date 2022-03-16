@@ -31,6 +31,7 @@
 * 更新遠端數據庫： git push origin master
    * push為更新遠端數據庫
    * origin為遠端數據庫名稱
+   * git push -u origin main
 
 ## Sourcetree
 
@@ -62,5 +63,24 @@
     * Mac：~/.gitconfig
     * Win：C:\Users\$USER
 
-## 11 https://www.youtube.com/watch?v=kajih2OHig0&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=11
+## 遠端儲存庫(Repository)操作
+* 註冊遠端儲存庫：git remote add origin 遠端儲存庫網址
+* 更新資料到遠端 master 分支：git push -u origin master
+* -u 是指他預設會推到哪個遠端數據庫服務
+* origin 可以改它的遠端數據庫名稱，例如 *git push -u github master*
+* 一個本地數據庫可以綁訂一個以上的遠端數據庫，遠端數據庫名稱不能一樣，可以先推到測試主機上確認沒問題再推到正式主機
+
+## Bitbucket
+
+## Git 版本細節
+* branch：分支，預設分支叫做 master
+* HEAD：指標，目前當下的位置
+* origin：預設遠端儲存庫名稱
+* 回頭觀看版本內容：git checkout 編號
+* 返回最新的版本：git checkout master(分支名稱)
+
+* 17 https://www.youtube.com/watch?v=sM2_e8ysjyg&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=17
+
+
+
 
