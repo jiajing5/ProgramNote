@@ -69,16 +69,25 @@
  * inherit; //繼承自父元素的可見性
   * overflow-x:hidden; //隱藏水平捲軸
   * overflow-y:auto; //顯示垂直捲軸
-## position 定位
-* position 的用途是設定「物件定位時所要的參考對像」，預設狀態下物件的位置是依據資料流來做排列，也就是跟隨資料做排列，如果對物件添加了不同的 position 之後，就能改變物件所參考的空間對像，進而改變物件的位置。
- * static (靜態定位)：將其他定位特性取消，回到最原始的狀態，一般來說除非有特殊狀況，不然不會用到，多數的網頁物件預設也都屬於此種定位。
- * relative (相對定位)：參考的空間是物件本身位於資料流內的原始位置
- * fixed (固定定位)
- * absolute (絕對定位)：會從資料流中抽離，自己獨立一個層，並參考父層空間作為定位的空間 
- * sticky (黏貼定位)
+## position 定位 https://www.runoob.com/css/css-positioning.html
+* 設定「物件定位時所要的參考對像」
+ * static (靜態定位)：
+  * HTML 元素的默認值，即沒有定位，遵循正常的文檔流對象。
+  * 不會受到 top, bottom, left, right影響。
+ * relative (相對定位)：
+  * 相對定位元素的定位是相對其正常位置，但它原本所佔的空間不會改變。
+ * fixed (固定定位)：
+  * 元素的位置相對於瀏覽器窗口是固定位置，即使窗口是滾動的它也不會移動。
+  * 使元素的位置與文檔流無關，因此不佔據空間，Fixed定位的元素和其他元素重疊。
+ * absolute (絕對定位)：
+  * 絕對定位的元素的位置相對於最近的已定位父元素，如果元素沒有已定位的父元素，那麼它的位置相對於<html>。
+  * 會從資料流中抽離，不佔據空間，absolute 定位的元素和其他元素重疊。
+ * sticky (黏貼定位)：
+  * 基於用戶的滾動位置來定位。
+  * 它的行為就像 position:relative; 而當頁面滾動超出目標區域時，它的表現就像 position:fixed;，它會固定在目標位置。元素定位表現為在跨越特定閾值前為相對定位，之後為固定定位。
+  * 指定 top, right, bottom 或 left 四個閾值其中之一，才可使粘性定位生效。
 ## z-index 
 * 設定元素的堆疊順序，設定值越高越前面，可以為負數，例如：z-index: -1。只能在有設定位（position）的元素上才會奏效。可為position: static、absolute、relative、fixed。
-
 ## 字體
 * Google Font https://fonts.google.com/
 * @font-face 
@@ -93,3 +102,8 @@
   src: local(Gentium),    /* 指定使用者電腦中的 Gentium 字型 */
        url(Gentium.woff); /* 如果使用者電腦中找不到，則從網路下載 */
 }
+## text-decoration
+* text-decoration:none; //預設值，無額外文字特效
+* overline;	//文字增加上線特效
+* underline;	//文字增加底線特效
+* line-through;	//文字增加刪除線特效
