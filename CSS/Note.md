@@ -41,8 +41,8 @@
 ## 漸層
 * https://www.oxxostudio.tw/articles/202008/css-gradient.html
 * 可以套用漸層的 CSS 屬性有兩種，分別是：
- * background：元素的背景 ( 最常遇見 )
- * list-style-image：清單預設的符號圖案 ( 通常可用偽元素取代 )
+  * background：元素的背景 ( 最常遇見 )
+  * list-style-image：清單預設的符號圖案 ( 通常可用偽元素取代 )
 * background:linear-gradient(方向, 顏色1 位置, 顏色2 位置); 
 ## 背景漸變和自動全屏
 * body{
@@ -59,30 +59,30 @@
 ## 裁切圖片
 *  position:absolute;
 *  clip:rect(10px,290px,290px,10px);
- *  position 固定裁切的位置，值：上、右、下、左(上、下的起點是上方為 0，右、左的起點是左邊為 0)
+   *  position 固定裁切的位置，值：上、右、下、左(上、下的起點是上方為 0，右、左的起點是左邊為 0)
 ## 捲軸
 * 透過 overflow 的設定，可以讓圖片或文字區塊在固定的範圍內呈現，如果超出範圍的話會自動變成捲軸呈現方式(隱藏超出父元素的子元素)
- * overflow: auto; //預設會自動使用捲軸
- * visible; //顯示的文字或圖片會直接超出範圍，不使用捲軸
- * hidden; //自動隱藏超出的文字或圖片
- * scroll; //自動產生捲軸
- * inherit; //繼承自父元素的可見性
-  * overflow-x:hidden; //隱藏水平捲軸
-  * overflow-y:auto; //顯示垂直捲軸
+  * overflow: auto; //預設會自動使用捲軸
+  * visible; //顯示的文字或圖片會直接超出範圍，不使用捲軸
+  * hidden; //自動隱藏超出的文字或圖片
+  * scroll; //自動產生捲軸
+  * inherit; //繼承自父元素的可見性
+    * overflow-x:hidden; //隱藏水平捲軸
+    * overflow-y:auto; //顯示垂直捲軸
 ## position 定位 https://www.runoob.com/css/css-positioning.html
 * 設定「物件定位時所要的參考對像」
- * static (靜態定位)：
+* static (靜態定位)：
   * HTML 元素的默認值，即沒有定位，遵循正常的文檔流對象。
   * 不會受到 top, bottom, left, right影響。
- * relative (相對定位)：
+* relative (相對定位)：
   * 相對定位元素的定位是相對其正常位置，但它原本所佔的空間不會改變。
- * fixed (固定定位)：
+* fixed (固定定位)：
   * 元素的位置相對於瀏覽器窗口是固定位置，即使窗口是滾動的它也不會移動。
   * 使元素的位置與文檔流無關，因此不佔據空間，Fixed定位的元素和其他元素重疊。
- * absolute (絕對定位)：
+* absolute (絕對定位)：
   * 絕對定位的元素的位置相對於最近的已定位父元素，如果元素沒有已定位的父元素，那麼它的位置相對於<html>。
   * 會從資料流中抽離，不佔據空間，absolute 定位的元素和其他元素重疊。
- * sticky (黏貼定位)：
+* sticky (黏貼定位)：
   * 基於用戶的滾動位置來定位。
   * 它的行為就像 position:relative; 而當頁面滾動超出目標區域時，它的表現就像 position:fixed;，它會固定在目標位置。元素定位表現為在跨越特定閾值前為相對定位，之後為固定定位。
   * 指定 top, right, bottom 或 left 四個閾值其中之一，才可使粘性定位生效。
@@ -91,13 +91,13 @@
 ## 字體
 * Google Font https://fonts.google.com/
 * @font-face 
- * @font-face {
+  * @font-face {
   font-family: Gentium;
   src: url(http://example.com/fonts/Gentium.woff);
 }
- * p { font-family: Gentium, serif; }
- * /* Gentium 字型 */
- * @font-face {
+  * p { font-family: Gentium, serif; }
+  * /* Gentium 字型 */
+  * @font-face {
   font-family: MyGentium;
   src: local(Gentium),    /* 指定使用者電腦中的 Gentium 字型 */
        url(Gentium.woff); /* 如果使用者電腦中找不到，則從網路下載 */
