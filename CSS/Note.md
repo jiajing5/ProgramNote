@@ -107,3 +107,27 @@
 * overline;	//文字增加上線特效
 * underline;	//文字增加底線特效
 * line-through;	//文字增加刪除線特效
+ 
+ ## 使用 CSS border 製作梯形、三角形、對話框
+ * https://www.footmark.com.tw/news/web-design/css/css-border-create-triangle/
+ 
+ ## 小圖示變色
+ * https://www.gushiciku.cn/pl/20XH/zh-tw
+ * 使用亮度濾鏡
+   * 圖示變黑色
+.black {
+    filter: brightness(0);
+}
+   * 圖示變白色
+.white {
+    filter: brightness(100);
+}
+* 使用遮罩 mask
+## Selector https://developer.mozilla.org/zh-TW/docs/Glossary/CSS_Selector
+* 鄰接同層選擇器 A + B
+* 通用同層選擇器 A ~ B
+* 直屬選擇器 A > B
+* 後代選擇器 A B
+* :first-child是CSS當中的一種偽類別（pseudo-class），代表任何身為長子的元素（親元素的第一個子元素）。
+* :first-of-type 代表本節點為兄弟節點中第一個此類型節點。
+ 
