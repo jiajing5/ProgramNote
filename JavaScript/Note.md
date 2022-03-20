@@ -13,3 +13,8 @@
 * event.preventDefault()
   * 停止事件的默認動作 (例如：阻止a標籤的超連結)
 * Once preventDefault has been called it will remain in effect throughout the remainder of the event's propagation.
+## test()
+* 用於檢測一個字符串是否匹配某個模式，如果字符串中有匹配的值返回 true，否則返回 false
+* 正則表達式驗證email格式
+  * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
+  * const regexMatch = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)
