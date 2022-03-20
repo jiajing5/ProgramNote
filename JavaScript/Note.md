@@ -18,3 +18,7 @@
 * 正則表達式驗證email格式
   * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions
   * const regexMatch = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)
+## match()
+* 搭配正規表示式 (Regex)來找出字串中匹配的內容
+* 返回一個陣列，第一個元素是完整匹配內容，接著是匹配的群組 (capturing group)；如果沒有匹配則返回 null。
+* str.match(regexp)
