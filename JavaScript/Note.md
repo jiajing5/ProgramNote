@@ -22,3 +22,7 @@
 * 搭配正規表示式 (Regex)來找出字串中匹配的內容
 * 返回一個陣列，第一個元素是完整匹配內容，接著是匹配的群組 (capturing group)；如果沒有匹配則返回 null。
 * str.match(regexp)
+## 常用事件 event
+* https://medium.com/%E9%A6%AC%E6%A0%BC%E8%95%BE%E7%89%B9%E7%9A%84%E5%86%92%E9%9A%AA%E8%80%85%E6%97%A5%E8%AA%8C/js-%E4%BA%8B%E4%BB%B6%E7%AD%86%E8%A8%98-%E4%B8%8B-68c7596cb4bc
+## Trigger a Button Click on Enter
+* https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
