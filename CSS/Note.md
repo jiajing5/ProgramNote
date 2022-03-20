@@ -130,4 +130,12 @@
 * 後代選擇器 A B
 * :first-child是CSS當中的一種偽類別（pseudo-class），代表任何身為長子的元素（親元素的第一個子元素）。
 * :first-of-type 代表本節點為兄弟節點中第一個此類型節點。
- 
+## grid
+* https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/
+## 轉換theme
+* 用css variable轉換theme https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2
+* 連結各別theme的css檔案轉換theme https://www.youtube.com/watch?v=dOIU773P1iw
+## 色碼轉換器
+* https://www.peko-step.com/zhtw/tool/hslrgb.html
+## creat On/Off FlipSwitch
+* https://proto.io/freebies/onoff/
