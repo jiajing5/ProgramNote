@@ -26,3 +26,25 @@
 * https://medium.com/%E9%A6%AC%E6%A0%BC%E8%95%BE%E7%89%B9%E7%9A%84%E5%86%92%E9%9A%AA%E8%80%85%E6%97%A5%E8%AA%8C/js-%E4%BA%8B%E4%BB%B6%E7%AD%86%E8%A8%98-%E4%B8%8B-68c7596cb4bc
 ## Trigger a Button Click on Enter
 * https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+## toFixed()
+* 可把 Number 四捨五入為指定小數位數的數字
+## slice()
+* The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
+  * arr.slice(begin)
+  * arr.slice(begin, end)
+## splice()
+* The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
+* 回傳被刪除的項目。
+  * array.splice(start)
+  * array.splice(start, deleteCount)
+  * array.splice(start, deleteCount, item1, item2, ...)
+    * start 增加/刪除項目的位置，負數代表從後方算起。
+    * deleteCount 刪除的個數，如為0則不會刪除。
+    * item… 添加的新項目。
+## split()
+* The split() method splits a String object into an array of strings by separating the string into substrings.
+* 分割字串成字串組
+  * stringObject.split(separator,howmany)
+    * separator 字串符或正則表達式，從該參數指定的地方分割stringObject。
+    * howmany 返回值的最大長度，超過該長度則不顯示。
+* https://medium.com/@bebebobohaha/slice-splice-split-%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85-46d9c8992729
