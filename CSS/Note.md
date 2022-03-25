@@ -148,3 +148,8 @@
        * 如果有 border-image-width / border-image-outset 屬性值， border-image-slice 必須指定數值，否則不合語法
        * 如果對背景圖上下左右進行 100% 的切割，即 div 四個角為整張背景圖，由於切割超過 50% ，兩個角之間的背景圖沒有重合部分，所以 border-image 無法進行拉伸。https://wonderland.coderbridge.io/2021/11/18/css-border-image-slice/
      * clip-path圖片裁切 https://orandigo.github.io/blog/2020/09/06/20200906-clip-path/
+## 隱藏input type="number"數字輸入框的上下箭頭
+* input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
