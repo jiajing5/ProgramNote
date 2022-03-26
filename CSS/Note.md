@@ -153,3 +153,13 @@
     -webkit-appearance: none;
     margin: 0;
   }
+## Background
+* background: color image attachment repeat poition / size
+* background: gray url("amos.png") scroll no-repeat 50% 50% / 50% 50%;
+* https://ithelp.ithome.com.tw/articles/10250499
+## background-attachment
+* scroll：預設值，背景圖會隨著外圍頁面滾動而移動
+* fixed：不管外面、裡面怎麼滾都不會動
+* local：自己的區塊內滾動時背景圖也會跟著移動
+* https://www.casper.tw/css/2013/09/25/background-att/
+ 
