@@ -162,4 +162,6 @@
 * fixed：不管外面、裡面怎麼滾都不會動
 * local：自己的區塊內滾動時背景圖也會跟著移動
 * https://www.casper.tw/css/2013/09/25/background-att/
+## https://medium.com/mo-learning/%E4%BF%AE%E6%94%B9-input-type-range-%E4%B9%8B-css-%E6%A8%A3%E5%BC%8F-ab57cd95cd65
+ 
  
