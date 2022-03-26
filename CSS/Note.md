@@ -154,7 +154,7 @@
     margin: 0;
   }
 ## Background
-* background: color image attachment repeat poition / size
+* background: color image attachment repeat position / size
 * background: gray url("amos.png") scroll no-repeat 50% 50% / 50% 50%;
 * https://ithelp.ithome.com.tw/articles/10250499
 ## background-attachment
@@ -162,6 +162,28 @@
 * fixed：不管外面、裡面怎麼滾都不會動
 * local：自己的區塊內滾動時背景圖也會跟著移動
 * https://www.casper.tw/css/2013/09/25/background-att/
-## https://medium.com/mo-learning/%E4%BF%AE%E6%94%B9-input-type-range-%E4%B9%8B-css-%E6%A8%A3%E5%BC%8F-ab57cd95cd65
+## 修改 input type=''range'' 之 CSS 樣式
+* https://medium.com/mo-learning/%E4%BF%AE%E6%94%B9-input-type-range-%E4%B9%8B-css-%E6%A8%A3%E5%BC%8F-ab57cd95cd65
+* 偽元素(pseudo-element)
+  * A CSS pseudo-element is used to style specified parts of an element. — w3schools
+  * Pseudo-elements create abstractions about the document tree beyond those specified by the document language. — W3C Recommendation
+    * ::first-letter 選取元素的第一個字
+    * ::first-line 選取元素的第一行
+    * ::before 在選取元素之前插入內容
+    * ::after 在選取元素之後插入內容
+    * ::selection 選取元素被使用者反白的部分內容
+  * ::-webkit-slider-thumb 操作 input range 的滑動鈕部分
+  * ::-webkit-slider-runnable-track 操作 input range 的滑動軌道部分
+  * 先將預設樣式關閉才可以做自訂義的樣式修改
+    * /* remove default style */
+      input[type="range"],
+      input[type="range"]::-webkit-slider-runnable-track,
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      } 
+* 偽類(pseudo-class)
+  * A pseudo-class is used to define a special state of an element. — w3schools
+    * :hover 滑鼠經過某個 DOM tree 元素上方時的狀態
+    * :active 點選某個 DOM tree 元素時的狀態
  
  
