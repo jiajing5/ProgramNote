@@ -48,3 +48,12 @@
     * separator 字串符或正則表達式，從該參數指定的地方分割stringObject。
     * howmany 返回值的最大長度，超過該長度則不顯示。
 * https://medium.com/@bebebobohaha/slice-splice-split-%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85-46d9c8992729
+## 模組管理
+   * 將每個檔案視為一個獨立的模組匯出，並在另一個檔案匯入使用
+   * https://www.casper.tw/development/2020/03/25/import-export/
+* export
+* named export（具名匯出）：可匯獨立的物件、變數、函式等等，匯出前必須給予特定名稱，而匯入時也必須使用相同的名稱。另外，一個檔案中可以有多個 named export。
+* default export（預設匯出）：一個檔案僅能有唯一的 default export，而此類型不需要給予名稱。
+  * 兩者也可共存於同一個檔案內，只不過 default export 僅能有一個。
+  * 
+* import
