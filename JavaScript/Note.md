@@ -52,8 +52,12 @@
    * 將每個檔案視為一個獨立的模組匯出，並在另一個檔案匯入使用
    * https://www.casper.tw/development/2020/03/25/import-export/
 * export
-* named export（具名匯出）：可匯獨立的物件、變數、函式等等，匯出前必須給予特定名稱，而匯入時也必須使用相同的名稱。另外，一個檔案中可以有多個 named export。
-* default export（預設匯出）：一個檔案僅能有唯一的 default export，而此類型不需要給予名稱。
-  * 兩者也可共存於同一個檔案內，只不過 default export 僅能有一個。
-  * 
+  * named export（具名匯出）：可匯獨立的物件、變數、函式等等，匯出前必須給予特定名稱，而匯入時也必須使用相同的名稱。另外，一個檔案中可以有多個 named export。
+  * default export（預設匯出）：一個檔案僅能有唯一的 default export，而此類型不需要給予名稱。
+    * 兩者也可共存於同一個檔案內，只不過 default export 僅能有一個。
+    * 
 * import
+  * 會因為匯出方法不同而改變
+* Side Effect 模組
+  * 有些模組並沒有實作 export，例如可直接執行的函式檔案，載入後會直接執行，不需要例外的呼叫
+* 
