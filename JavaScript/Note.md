@@ -24,6 +24,9 @@
 * str.match(regexp)
 ## 常用事件 event
 * https://medium.com/%E9%A6%AC%E6%A0%BC%E8%95%BE%E7%89%B9%E7%9A%84%E5%86%92%E9%9A%AA%E8%80%85%E6%97%A5%E8%AA%8C/js-%E4%BA%8B%E4%BB%B6%E7%AD%86%E8%A8%98-%E4%B8%8B-68c7596cb4bc
+## resize 事件
+* 文檔視圖調整大小時會觸發(瀏覽器視窗大小改變的時候)
+* https://developer.mozilla.org/zh-CN/docs/Web/API/Window/resize_event
 ## Trigger a Button Click on Enter
 * https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 ## toFixed()
@@ -73,4 +76,6 @@
 ## createTextNode()
 * 要注意在建立新節點後，只有 textContent 是唯一可用方法
 * https://orandigo.github.io/blog/2020/03/22/20200322-innerText-innerHTML-textContent-outerHTML/
+## clientHeight, clientWidth
+* https://shubo.io/element-size-scrolling/#offsetwidth-offsetheight
 * 
