@@ -67,6 +67,7 @@
 * 取得在一個節點內完整的標籤和文字，包括原始碼的換行
 ## textContent
 * 取得在一個節點內的文字並包括換行，會取得呈現在 HTML 原始碼內的換行、空格和文字， <br> 會忽略，取得的文字與換行會和原始碼相像
+* https://ithelp.ithome.com.tw/articles/10209018
 ## outerHTML
 * 包括節點和節點內的全部 HTML 標籤和文字
 ## createTextNode()
