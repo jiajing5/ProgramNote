@@ -185,5 +185,6 @@
   * A pseudo-class is used to define a special state of an element. — w3schools
     * :hover 滑鼠經過某個 DOM tree 元素上方時的狀態
     * :active 點選某個 DOM tree 元素時的狀態
- 
+## footer置底的方法
+* https://www.tpisoftware.com/tpu/articleDetails/2041
  
