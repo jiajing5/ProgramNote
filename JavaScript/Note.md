@@ -27,6 +27,17 @@
 ## resize 事件
 * 文檔視圖調整大小時會觸發(瀏覽器視窗大小改變的時候)
 * https://developer.mozilla.org/zh-CN/docs/Web/API/Window/resize_event
+## scroll 事件
+* 當一個元素的滾動條被滾動出現的onscroll事件
+* http://www.w3bai.com/zh-TW/jsref/event_onscroll.html
+* 獲取滾動條相對於其頂部的偏移
+  * let scrollTop = window.pageYOffset|| document.documentElement.scrollTop || document.body.scrollTop;
+  * https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/288188/
+* 回到頂部 scrollBy()
+  * scrollBy(x,y)方法滾動當前window中顯示的文檔，x和y指定滾動的相對量
+  * https://www.cnblogs.com/xiaohuochai/p/5836179.html
+* window.requestAnimationFrame()方法通知瀏覽器我們想要產生動畫，並且要求瀏覽器在下次重繪畫面前呼叫特定函數更新動畫。
+  * 相容性 https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/260087/
 ## Trigger a Button Click on Enter
 * https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 ## toFixed()
