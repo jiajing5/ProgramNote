@@ -24,6 +24,7 @@
 * str.match(regexp)
 ## 常用事件 event
 * https://medium.com/%E9%A6%AC%E6%A0%BC%E8%95%BE%E7%89%B9%E7%9A%84%E5%86%92%E9%9A%AA%E8%80%85%E6%97%A5%E8%AA%8C/js-%E4%BA%8B%E4%BB%B6%E7%AD%86%E8%A8%98-%E4%B8%8B-68c7596cb4bc
+* http://test.domojyun.net/MEMO/JavaScript/7_event.html
 ## resize 事件
 * 文檔視圖調整大小時會觸發(瀏覽器視窗大小改變的時候)
 * https://developer.mozilla.org/zh-CN/docs/Web/API/Window/resize_event
