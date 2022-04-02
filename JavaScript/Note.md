@@ -38,6 +38,9 @@
   * https://www.cnblogs.com/xiaohuochai/p/5836179.html
 * window.requestAnimationFrame()方法通知瀏覽器我們想要產生動畫，並且要求瀏覽器在下次重繪畫面前呼叫特定函數更新動畫。
   * 相容性 https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/260087/
+* 滾動到指定位置
+  * https://kknews.cc/zh-tw/code/4xm2rrq.html
+  * https://pjchender.blogspot.com/2015/04/jquery.html
 ## Trigger a Button Click on Enter
 * https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 ## toFixed()
