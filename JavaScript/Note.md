@@ -43,6 +43,7 @@
   * document.body.scrollHeight = document.documentElement.scrollTop + document.body.clientHeight
   * https://kknews.cc/zh-tw/code/4xm2rrq.html
   * https://pjchender.blogspot.com/2015/04/jquery.html
+  * https://shubo.io/element-size-scrolling/#offsetwidth-offsetheight
 ## Trigger a Button Click on Enter
 * https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 ## toFixed()
@@ -92,6 +93,5 @@
 ## createTextNode()
 * 要注意在建立新節點後，只有 textContent 是唯一可用方法
 * https://orandigo.github.io/blog/2020/03/22/20200322-innerText-innerHTML-textContent-outerHTML/
-## clientHeight, clientWidth
-* https://shubo.io/element-size-scrolling/#offsetwidth-offsetheight
-* 
+## hover放大圖片
+* https://tools.wingzero.tw/article/sn/623
