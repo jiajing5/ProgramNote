@@ -101,5 +101,18 @@
 26~32堂線上講義：https://hexschool.tw/v9bxz
 33~36堂線上講義：https://hexschool.tw/jjq1M
 
+## 20
+* 用git checkout分支名稱時，HEAD也會依照對應位置指定commit位置
+## 21
+## 合併分支 && 快轉機制
+* 合併分支：git merge 分支名稱
+* 取消快轉：git merge 分支名稱 --no-ff
+   * 產生新的commit，可以知道有做過合併
+* 觀看線圖：git log —oneline -graph
+*　還原合併前狀態：git reset —hard ORIG_HEAD
+## 快轉機制
+* 取消快轉：兩個不同任務分支合併時，取消快轉
+* 預設使用快轉：本地與遠端兩條相同的任務分支時，可以用快轉
 
-
+## 23
+   * https://www.youtube.com/watch?v=M_ioHIuY2jg&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=23
