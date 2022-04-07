@@ -95,7 +95,11 @@
 * 還原到特定 commit：git reset commit編號 --hard
 * git reset 參數介紹 (https://gitbook.tw/chapters/using-git/reset-commit.html)
 
-
+01~09堂線上講義：https://hexschool.tw/n1C7O
+10~18堂線上講義：https://hexschool.tw/PDcLZ
+19~25堂線上講義：https://hexschool.tw/qCPbw
+26~32堂線上講義：https://hexschool.tw/v9bxz
+33~36堂線上講義：https://hexschool.tw/jjq1M
 
 
 
