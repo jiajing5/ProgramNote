@@ -79,7 +79,22 @@
 * 回頭觀看版本內容：git checkout 編號
 * 返回最新的版本：git checkout master(分支名稱)
 
-* 17 https://www.youtube.com/watch?v=sM2_e8ysjyg&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=17
+## 17
+* https://www.youtube.com/watch?v=sM2_e8ysjyg&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=17
+## 新增檔案時，檔案還沒加追蹤時，清空工作目錄
+* 顯示此次清除的檔案：git clean -n
+* 強制清除檔案：git clean -f 
+## 檔案已加入追蹤，清空工作目錄
+* 還原工作目錄上已更改的檔案 ：git checkout -- <file>
+## 檔案加入到索引，退到工作目錄
+* 加入索引的檔案還原到工作目錄：git reset HEAD
+## 版本還原
+* 還原前兩個版本：git reset HEAD^^
+* 還原前兩個版本，所有更新檔案都放棄：git reset HEAD^^ --hard
+* 觀看詳細歷史紀錄：git reflog
+* 還原到特定 commit：git reset commit編號 --hard
+* git reset 參數介紹 (https://gitbook.tw/chapters/using-git/reset-commit.html)
+
 
 
 
