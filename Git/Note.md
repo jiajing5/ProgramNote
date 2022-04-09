@@ -102,14 +102,25 @@
 33~36堂線上講義：https://hexschool.tw/jjq1M
 
 ## 20
-* 用git checkout分支名稱時，HEAD也會依照對應位置指定commit位置
+## branch 介紹
+* 分支就像是便利貼，貼在某個 commit 上
+* 分支合併，主要是兩個 commit 進行合併
+## 開分支流程
+* 新增分支：git branch 分支名稱
+* 查看分支：git branch 
+* 切換分支：git checkout 分支名稱
+  * 用git checkout分支名稱時，HEAD也會依照對應位置指定commit位置
+* 刪除分支：git branch -d 分支名稱 、-D 是強制刪除
+* 還原上個版本：git reset HEAD^
+
 ## 21
 ## 合併分支 && 快轉機制
 * 合併分支：git merge 分支名稱
 * 取消快轉：git merge 分支名稱 --no-ff
    * 產生新的commit，可以知道有做過合併
 * 觀看線圖：git log —oneline -graph
-*　還原合併前狀態：git reset —hard ORIG_HEAD
+* 還原合併前狀態：git reset —hard ORIG_HEAD
+* 還原上個版本：git reset HEAD^ (^以HEAD位置為基準向前還原幾個版本)
 ## 快轉機制
 * 取消快轉：兩個不同任務分支合併時，取消快轉
 * 預設使用快轉：本地與遠端兩條相同的任務分支時，可以用快轉
