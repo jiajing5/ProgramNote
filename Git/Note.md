@@ -123,6 +123,10 @@
 ## 快轉機制
 * 取消快轉：兩個不同任務分支合併時，取消快轉
 * 預設使用快轉：本地與遠端兩條相同的任務分支時，可以用快轉
+## 25
+* 當其中一個分支還在源頭的時候才會實行快轉
+   
+## 
 
-## 23
-   * https://www.youtube.com/watch?v=M_ioHIuY2jg&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=23
+   
+   * 26 https://www.youtube.com/watch?v=Us2GDj_DqMs&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=26
