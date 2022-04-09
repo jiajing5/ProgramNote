@@ -72,12 +72,14 @@
 
 ## Bitbucket
 
+## 16
 ## Git 版本細節
 * branch：分支，預設分支叫做 master
 * HEAD：指標，目前當下的位置
 * origin：預設遠端儲存庫名稱
-* 回頭觀看版本內容：git checkout 編號
+* 回頭觀看版本內容：git checkout 編號 (編號用git log查看或是source tree的commit欄位)
 * 返回最新的版本：git checkout master(分支名稱)
+* 資料夾git > refs內有提到各種資訊，例如當前位置
 
 ## 17
 * https://www.youtube.com/watch?v=sM2_e8ysjyg&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=17
@@ -87,7 +89,7 @@
 ## 檔案已加入追蹤，清空工作目錄
 * 還原工作目錄上已更改的檔案 ：git checkout -- <file>
 ## 檔案加入到索引，退到工作目錄
-* 加入索引的檔案還原到工作目錄：git reset HEAD
+* 把加入索引的檔案還原到工作目錄：git reset HEAD
 ## 版本還原
 * 還原前兩個版本：git reset HEAD^^
 * 還原前兩個版本，所有更新檔案都放棄：git reset HEAD^^ --hard
@@ -112,7 +114,6 @@
   * 用git checkout分支名稱時，HEAD也會依照對應位置指定commit位置
 * 刪除分支：git branch -d 分支名稱 、-D 是強制刪除
 * 還原上個版本：git reset HEAD^ (^以HEAD位置為基準向前還原幾個版本)
-
 ## 21
 ## 合併分支 && 快轉機制
 * 合併分支：git merge 分支名稱
@@ -125,8 +126,25 @@
 * 預設使用快轉：本地與遠端兩條相同的任務分支時，可以用快轉
 ## 25
 * 當其中一個分支還在源頭的時候才會實行快轉
-   
-## 
+## Git 分支中階教學   
+## 26
+## 還原技巧
+* 回頭觀看版本內容(移動HEAD)：git checkout 編號
+* 返回最新的版本：git checkout master(分支名稱)
+* 還原工作目錄上已更改的檔案 ：git checkout -- <file>
+* 索引檔案>還原到工作目錄：git reset HEAD
+* 還原前兩個版本，會保留檔案：git reset HEAD^^
+* 還原前兩個版本，所有更新檔案都*放棄*：git reset HEAD^^ --hard
+* 還原到特定 commit：git reset commit編號 --hard
+* 觀看詳細歷史紀錄：git reflog
+* git reset 參數介紹 (https://gitbook.tw/chapters/using-git/reset-commit.html)
+## checkout 與 reset 差異
+* checkout 是移動 HEAD
+* reset 是 HEAD跟branch一起移動
+## 27
+
+
 
    
-   * 26 https://www.youtube.com/watch?v=Us2GDj_DqMs&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=26
+   
+* 26 https://www.youtube.com/watch?v=Us2GDj_DqMs&list=PLYrA-SsMvTPOZeB6DHvB0ewl3miMf-2tj&index=26
