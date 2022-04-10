@@ -26,3 +26,6 @@
 * React Context：管理共用狀態的資訊
 * 理解為什麼需要Redux：偏向超大型應用
 * 學習Class寫法
+## Node.js
+* 是一個執行環境/作業系統的概念(環境安裝包)
+* 瀏覽器有直接執行javascript的能力/環境，電腦沒有，javascript沒有環境讓電腦執行，安裝Node.js讓電腦有能力執行js的檔案，電腦就可以連結數據庫或後端，可以把npm npx想像成是建立在Node.js的安裝包/工具
