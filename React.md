@@ -26,6 +26,22 @@
 * React Context：管理共用狀態的資訊
 * 理解為什麼需要Redux：偏向超大型應用
 * 學習Class寫法
+## Create React App
+* https://zh-hant.reactjs.org/docs/create-a-new-react-app.html
+* 
 ## Node.js
 * 是一個執行環境/作業系統的概念(環境安裝包)
 * 瀏覽器有直接執行javascript的能力/環境，電腦沒有，javascript沒有環境讓電腦執行，安裝Node.js讓電腦有能力執行js的檔案，電腦就可以連結數據庫或後端，可以把npm npx想像成是建立在Node.js的安裝包/工具
+## webpack
+* 不管使用什麼工具都會需要webpack打包，例如把箭頭函式轉換成IE看得懂的樣子
+* 可以想像成是前端專案的管理器
+```javascript
+import React from 'react';
+// React 可以寫一些API
+import ReactDOM from 'react-dom';
+// ReactDOM 把寫好的東西畫到頁面上
+```
+## JSX
+* 在函示內寫像HTML的東西
+* 在寫React的時候是寫Javascript，寫Javascript要表現畫面的話是用物件表現，不夠方便，JSX可用HTML的寫法建立React要求的物件
+* 
