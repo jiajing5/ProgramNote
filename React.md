@@ -1,4 +1,5 @@
 * https://www.youtube.com/watch?v=zqV7NIFGDrQ
+* 49:33
 ## React
 * Javascript的UI庫
 * 同Vue、Angular，也被稱為JS的「框架」
@@ -45,3 +46,5 @@ import ReactDOM from 'react-dom';
 * 在函示內寫像HTML的東西
 * 在寫React的時候是寫Javascript，寫Javascript要表現畫面的話是用物件表現，不夠方便，JSX可用HTML的寫法建立React要求的物件
 * 
+## code
+* 在箭頭函式中return JSX就會被視為一個js元件
