@@ -48,6 +48,10 @@ import ReactDOM from 'react-dom';
 * 
 ## code
 * 在箭頭函式中return JSX就會被視為一個js元件
+* Home (State 狀態共享給Edit跟List，把data透過props傳遞)
+  * Edit
+  * List
+    * Item
 ## CSS
 * 可用物件方式寫，要在JSX寫javascript都要加一個大括號
 ```javascript
@@ -88,4 +92,44 @@ const List = () => {
 }
 ```
 * 會拿到一個陣列資料
-* 切版的時候會想怎麼切各個不同元件
+* React希望用map函式渲染的時候要幫item加key上去
+``` javascript
+const List = ({ listData }) => {
+    return <div className="list">
+    {
+        arr.map(item => <Item key={item} />)
+    } 
+    //key像是對item貼標籤，標籤要是獨一無二才能辨識出item，可以效能優化，不能用index因為內容改變的話react就要重新認識，會耗效能
+    </div>
+}
+```
+## 狀態
+* 切版的時候要思考怎麼切各個不同元件，可以幫助去想狀態要怎麼分
+* 在Home新增狀態
+  * import { useState } from 'resect'
+  * React第二個單字開頭要用大寫
+  * 直接寫javascript的變數的話，ReactDOM會不知道跟React畫面有關，就不能改變變數，要讓變數給ReactDOM知道要重新渲染元件，要用useState
+``` javascript
+const [a, setA] = useState(100)
+// const [變數, 對應的函式] = useState(初始值) 
+function plus(){
+setA(200) //直接把a變成200
+}
+//JSX
+<button onClick={plus}>加法</button>
+
+```
+``` javascript
+const [a, setA] = useState(100)
+// const [變數, 對應的函式] = useState(初始值) 
+function plus(){
+ setA(function (prev) {
+  return prev + 200
+ })
+}
+//如果要寫多次setA(a+200)，會不準確，所以要透過變數拿到上一個值做準確的加減，例如a初始值100，點擊button後會+200，a變成300
+//JSX
+<button onClick={plus}>加法</button>
+
+```
+* 
