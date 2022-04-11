@@ -1,5 +1,5 @@
 * https://www.youtube.com/watch?v=zqV7NIFGDrQ
-* 1:20:40
+* 1:23:40
 ## React
 * Javascript的UI庫
 * 同Vue、Angular，也被稱為JS的「框架」
