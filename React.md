@@ -133,3 +133,7 @@ function plus(){
 
 ```
 * 
+## 討論Edit部分 1:20:30
+* 取得input的值
+  * 用javascript onchange事件 Linstener 拿到event.target.value
+  * doucment.getElementById直接拿value
