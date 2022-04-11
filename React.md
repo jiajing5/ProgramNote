@@ -137,3 +137,5 @@ function plus(){
 * 取得input的值
   * 用javascript onchange事件 Linstener 拿到event.target.value
   * doucment.getElementById直接拿value
+* 在React內寫的操作都要跟狀態變動有關才能拿到結果
+  * 讓input各自綁定一個useState
