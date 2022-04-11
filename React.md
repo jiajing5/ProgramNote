@@ -48,3 +48,44 @@ import ReactDOM from 'react-dom';
 * 
 ## code
 * 在箭頭函式中return JSX就會被視為一個js元件
+## CSS
+* 可用物件方式寫，要在JSX寫javascript都要加一個大括號
+```javascript
+const app = {
+color:'red'
+}
+// 帶入JSX
+<div style={app}></div>
+```
+* 其他第三方部件 styled-components
+  * 可以把元件跟CSS寫在同一個javascript裡的方式
+* 用純CSS
+  * 寫入class用className
+  ```javascript
+  <div className="app"></div>
+  ```
+## 用陣列及arr.map重複產生item
+``` javascript
+import Item from "./item"
+const arr = [1, 2, 2]
+const List = () => {
+    return <div className="list">
+    {
+        arr.map(item => <Item/>)
+    }
+    </div>
+}
+```
+``` javascript
+import Item from "./item"
+const arr = [1, 2, 3]
+const List = () => {
+    return <div className="list">
+    {
+        arr.map(item => <div>{item}</div>) //會顯示1 2 3
+    }
+    </div>
+}
+```
+* 會拿到一個陣列資料
+* 切版的時候會想怎麼切各個不同元件
