@@ -147,8 +147,31 @@ function plus(){
   * doucment.getElementById直接拿value
 * 在React內寫的操作都要跟狀態變動有關才能拿到結果
   * 讓input各自綁定一個useState
+* 要取得上一個值再塞入現在的data
+``` javascript
+function addItem() {
+    add(function (prevData) {
+      return [
+        ...prevData,
+        {
+          note,
+          date,
+          time,
+        },
+      ];
+    });
+  }
+```
 ## Item的部分
 * 從List傳入{ note, date, time }
 ## List的部分
 * 用解構賦值取出 const{note, date, time} = item
-
+## npm包
+* npm i prettier
+  * 讓程式碼變漂亮，可以到官網查詢如何設定方法，例如變更單引號、建立標準化樣式
+  * 到package.json的script新增"prettier":"prettier -w src/"
+* uuid npm
+  * npm install uuid
+  * 產生唯一的ID
+  * import { v4 } from 'uuid';
+## useEffect
