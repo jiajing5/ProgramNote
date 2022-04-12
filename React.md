@@ -228,6 +228,14 @@ useEffect(() => {
 * 到package.json的script加入"server":"json-server --watch db.json"
 * 到命令提示字元進入資料夾輸入npm run server
   * 會根據db.json的檔案執行
+ ```
+ "data":[{
+            "id":"001",
+            "note":"111",
+            "date":"",
+            "time":""
+        }],
+```
 * 用fetch方式拿後端資料後，透過fetchData的方式去set到狀態裡
 ``` javascript 
 useEffect(() => {
