@@ -262,4 +262,45 @@ useEffect(() => {
 }, [])
 ```
 
+* 只要data有變動就透過useEffect去post資料
+* 參考官方文件要用PUT
+``` javascript
+async function fetchSetData(data){
+  await fetch(API_GET_DATA, {
+    method: "PUT",
+    headers:{
+      'Conten-type': 'application/json'
+    },
+    body: JSON.stringify({data})
+  })
+}
+
+const Home = () => {
+  const [data, setData] = useState([]);
+  
+  useEffect(() => {
+    fetchSetData(data)
+  }, [data])
+  
+  ...
+  }
+```
+## useRef 2:00:00
+* 東西是空的時，因為重新渲染就會每次執行useEffect，東西就會被清空
+* useRef預防方法：透過一個變數一直維持在一個唯一值，用一個值判斷是否該做某事
 * 
+* 
+``` javascript
+const Home = () => {
+  const [data, setData] = useState([]);
+  const submittingStatuse = useRef(false);
+  useEffect(() => {
+  if (!submittingStatuse){
+  return
+  }
+    fetchSetData(data)
+  }, [data])
+  
+  ...
+  }
+```
