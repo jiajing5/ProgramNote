@@ -71,11 +71,15 @@ color:'red'
 ## 用陣列及arr.map重複產生item
 ``` javascript
 import Item from "./item"
-const arr = [1, 2, 2]
+const arr = [1, 2, 3]
 const List = () => {
     return <div className="list">
     {
         arr.map(item => <Item/>)
+        //會顯示
+        //item
+        //item
+        //item
     }
     </div>
 }
@@ -86,7 +90,11 @@ const arr = [1, 2, 3]
 const List = () => {
     return <div className="list">
     {
-        arr.map(item => <div>{item}</div>) //會顯示1 2 3
+        arr.map(item => <div>{item}</div>) 
+        //會顯示
+        //1
+        //2
+        //3
     }
     </div>
 }
@@ -139,3 +147,8 @@ function plus(){
   * doucment.getElementById直接拿value
 * 在React內寫的操作都要跟狀態變動有關才能拿到結果
   * 讓input各自綁定一個useState
+## Item的部分
+* 從List傳入{ note, date, time }
+## List的部分
+* 用解構賦值取出 const{note, date, time} = item
+
