@@ -174,4 +174,23 @@ function addItem() {
   * npm install uuid
   * 產生唯一的ID
   * import { v4 } from 'uuid';
-## useEffect
+## deleteItem
+  * ES6有一個API叫filter，可以過濾掉當前id並保持順序
+  * 把當下item的id做比對，不等於就讓他回到陣列裡面
+  * return prev.filter(item => item.id !== id)
+* 把新增的東西新增在最上面要把解構陣列放在後面
+``` javascript
+function addItem() {
+    add(function (prevData) {
+      return [
+        {
+          note,
+          date,
+          time,
+        },
+        ...prevData,
+      ];
+    });
+  }
+```
+## useEffect 1:43:20
