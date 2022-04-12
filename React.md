@@ -53,7 +53,7 @@ import ReactDOM from 'react-dom';
   * List
     * Item
 ## CSS
-* 可用物件方式寫，要在JSX寫javascript都要加一個大括號
+* 可用物件方式寫
 ```javascript
 const app = {
 color:'red'
@@ -69,6 +69,7 @@ color:'red'
   <div className="app"></div>
   ```
 ## 用陣列及arr.map重複產生item
+* 要在JSX寫javascript都要加一個大括號
 ``` javascript
 import Item from "./item"
 const arr = [1, 2, 3]
@@ -111,7 +112,7 @@ const List = ({ listData }) => {
     </div>
 }
 ```
-## 狀態
+## useState 狀態
 * 切版的時候要思考怎麼切各個不同元件，可以幫助去想狀態要怎麼分
 * 在Home新增狀態
   * import { useState } from 'resect'
@@ -194,3 +195,71 @@ function addItem() {
   }
 ```
 ## useEffect 1:43:20
+1. 某個狀態或變數有變動後，要做什麼事情，例如data變動後跳出彈窗
+  * 綁定data(依賴)，function有用到的話都加進去
+``` javascript
+useEffect(() => {
+  window.alert("新增成功")
+}, [data])
+```
+2. 清除內容
+  * 外面的function是每次執行時會做的事
+  * 裡面的function是每次渲染結束後要開始下一次新的渲染會做的事
+``` javascript 
+  useEffect(() => {
+    // 綁定的事情
+    return() => {
+      //取消綁定
+    }
+  }, [data])
+```
+3. 只希望執行一次，但每次渲染都會執行，例如從後端拿資料
+  * 不綁定
+``` javascript 
+  useEffect(() => {
+   console.log('here')
+  }, [])
+```
+## 讓useEffect拉API，拿到後端資料，安裝json server
+* 模擬後端的工具
+* npm i npm i json-server
+* 參考官方文件
+* 在資料夾建立一個db.json檔案
+* 到package.json的script加入"server":"json-server --watch db.json"
+* 到命令提示字元進入資料夾輸入npm run server
+  * 會根據db.json的檔案執行
+* 用fetch方式拿後端資料後，透過fetchData的方式去set到狀態裡
+``` javascript 
+useEffect(() => {
+    fetch("http://localhost:3000/posts/1")
+    .then(res => res.json())
+    .then(data => {
+    console.log(data);
+    })
+  }, [])
+```
+* 在global資料夾建立constants.js管理變數export
+``` javascript 
+useEffect(() => {
+    fetch(API_GET_DATA)
+    .then(res => res.json())
+    .then(data => {
+    console.log(data);
+    })
+  }, [])
+```
+* 可以用async function讓程式碼更簡潔，可以拿到跟原本一樣的東西
+* useEffect內不支援async的方式，只能用.then
+``` javascript
+async function fetchData(setData){ //把setData放進當參數
+  const res = await fetch(API_GET_DATA) //拿到response
+  const {data} = await res.json()//用jason函式解構出來，拿到{data}
+  // console.log(data);
+  setData(data)
+}
+useEffect(() => {
+  fetchData(setData)
+}, [])
+```
+
+* 
