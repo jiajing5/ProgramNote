@@ -33,10 +33,10 @@
 ## Create React App
 * https://zh-hant.reactjs.org/docs/create-a-new-react-app.html
 * 
-## Node.js
+## Node.js 34:00
 * 是一個執行環境/作業系統的概念(環境安裝包)
 * 瀏覽器有直接執行javascript的能力/環境，電腦沒有，javascript沒有環境讓電腦執行，安裝Node.js讓電腦有能力執行js的檔案，電腦就可以連結數據庫或後端，可以把npm npx想像成是建立在Node.js的安裝包/工具
-## webpack
+## webpack 37:00
 * 不管使用什麼工具都會需要webpack打包，例如把箭頭函式轉換成IE看得懂的樣子
 * 可以想像成是前端專案的管理器
 ```javascript
