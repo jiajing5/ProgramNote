@@ -56,3 +56,5 @@ System.out.println(var3);
 ```
 ## 7 位元組
 * https://www.youtube.com/watch?v=wnkefVByIz4&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=8
+* byte的範圍-128~127之間
+* short的範圍-32768~32767之間
