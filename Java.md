@@ -6,8 +6,12 @@
 * JDK由oracle維護
 ## 1-3 安裝eclipse和IntelliJ
 * eclipse：開發工具、撰寫Java程式
-  * File>New>JavaProject
-  * File>New>Package
+  * 新增專案：File>New>JavaProject
+  * 新增套件Package：File>New>Package
+  * 新增檔案：File>New>File
+  * 開啟檔案撰寫第一個程式
+    * 放在package內的話就要寫 package testJava;
+    * 
 * IntelliJ：
 ## 1-4
 * 
