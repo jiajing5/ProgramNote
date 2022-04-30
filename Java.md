@@ -9,11 +9,13 @@
   * 新增專案：File>New>JavaProject
   * 新增Package套件(分類程式的地方，Name用"網域顛倒.名稱")：File>New>Package
   * https://www.youtube.com/watch?v=DEtickir3AE&t=192s
+  * 3
   * 新增第一個程式class類別(慣例首字大寫)：File>New>class
   * 開啟檔案撰寫第一個程式
     * Window>Show View>Project Explorer 可以開啟左邊頁籤
     * 放在package內的話就要寫 package testJava;
-    * Java進入點 public static void main(String[] args) {
+    * 程式進入點 public static void main(String[] args) {
+    * 執行程式 Run>Run as>Java Application
 * IntelliJ：
 ## 1-4
 * 
