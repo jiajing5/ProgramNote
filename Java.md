@@ -39,7 +39,7 @@ var1 = false;
 * https://www.youtube.com/watch?v=UHIZZob_VuM&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=6
 * char
   * 佔2^16
-  * 0-65535
+  * 0-65535 (字元無正負號，故從0開始)
   * 可以進行整數運算
   * 96
   * 'a'
