@@ -110,3 +110,31 @@ System.out.printf("10 %% 3.1f = %.2f\n", var3); // 10 % 3.1f = 0.70
 var3++;
 System.out.printf("var3++ = %.2f\n", var3); // var3++ = 1.70
 ```
+## 10 基本型別混合運算
+* https://www.youtube.com/watch?v=bfIFuVT35yg&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=10
+``` java
+byte var1 = 10;
+short var2 = 3;
+// short var3 = var1 + var2;
+// byte, short, char, int的範圍經過運算，都會變成int的範圍存放，再給值的時候就會出問題
+int var3 = var1 + var2;
+long var3 = var1 + var2; // long
+float var3 = var1 + var2; // float
+double var3 = var1 + var2; // double
+```
+## 11 基本型別轉型處理
+* https://www.youtube.com/watch?v=W9Cv3ZxGYWQ&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=11
+* 較大的部分放到小的可能會喪精度，要強制轉型
+``` java
+byte var1;
+//		short var2 = 2;
+short var2 = 129;
+// var1= var2; short佔有的空間比byte大，會編譯失敗，要強制轉型
+var1 = (byte)var2;
+//		System.out.println(var1); // 2
+System.out.println(var1); // -127
+//		由小到大byte, short, char, int, long, float, double
+```
+## 12 判斷式 if 的基本語法
+* https://www.youtube.com/watch?v=-hO-HXHLjpQ&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=12
+* 
