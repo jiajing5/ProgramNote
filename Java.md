@@ -170,3 +170,10 @@ System.out.println("End");
 ## 15 存取修飾字的基本認識
 * Java進階物件導向課程
 * https://www.youtube.com/watch?v=KxNq5XiGT2g&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=15
+* 一般類別 (定義類別時寫在左邊的)
+  * public：完全公開
+    * public class Access012 {}
+  * 沒有：相同Package下才能使用
+    * class Access013 {}
+* 類別中 (定義類別的大括號內)
+* 
