@@ -137,4 +137,36 @@ System.out.println(var1); // -127
 ```
 ## 12 判斷式 if 的基本語法
 * https://www.youtube.com/watch?v=-hO-HXHLjpQ&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=12
-* 
+* if(boolean值){...}
+``` java
+int score = 70;
+if(score>=60) {
+	System.out.println("Pass");
+}
+System.out.println("End");
+```
+## 13 if 單列與區塊結構
+* https://www.youtube.com/watch?v=1quKC_V4DIs&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=13
+* if(boolean值)單列敘述句;
+``` java
+int score = 70;
+if(score>=60) 
+	System.out.println("Pass");
+
+System.out.println("End");
+```
+## 14 if else 語法格式
+* https://www.youtube.com/watch?v=RqG2Rpk75yI&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=14
+* if(boolean值){...} else{...}
+``` java
+int score = 90;
+if(score>=60) { 
+	System.out.println("Pass");
+}else {
+	System.out.println("Down");
+}
+System.out.println("End");
+```
+## 15 存取修飾字的基本認識
+* Java進階物件導向課程
+* https://www.youtube.com/watch?v=KxNq5XiGT2g&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=15
