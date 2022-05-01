@@ -176,4 +176,7 @@ System.out.println("End");
   * 沒有：相同Package下才能使用
     * class Access013 {}
 * 類別中 (定義類別的大括號內)
-* 
+  * public：完全公開
+  * protected：相同Package及繼承的子類別
+  * 沒有：相同Package
+  * private：同類別
