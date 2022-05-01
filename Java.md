@@ -80,3 +80,17 @@ value = 10;
 Human tina;
 tina = new Human();
 ```
+## 8 整數 int 運算
+* https://www.youtube.com/watch?v=PSyalXdy97E&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=8
+``` java
+int var1 = 10; int var2 = 3;
+int var3;
+var3 = var1 + var2;
+System.out.printf("10 + 3 = %d\n", var3); //10 + 3 = 13
+// System.out.printf("要顯示的字串", 值)
+// %識別符號，printf內的百分比(%)都是特殊的識別符號
+// d呈現十進位的整數值
+// \n換行
+```
+## 9 浮點數float 與 倍精度浮點數double 運算
+* https://www.youtube.com/watch?v=6UIU3bdReTs&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=9
