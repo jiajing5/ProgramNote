@@ -94,3 +94,19 @@ System.out.printf("10 + 3 = %d\n", var3); //10 + 3 = 13
 ```
 ## 9 浮點數float 與 倍精度浮點數double 運算
 * https://www.youtube.com/watch?v=6UIU3bdReTs&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=9
+``` java
+float var1 = 10;
+float var2 = 3.1f;
+// 寫成小數點會被視為double空間存放，要表現float的話要加上f
+float var3;
+var3 = var1 + var2;
+System.out.printf("10 + 3.1f = %.2f\n", var3); // 10 + 3.1f = 13.10
+// f代表福點數
+// %.2f 取小數點兩位
+var3 = var1 / var2;
+System.out.printf("10 / 3.1f = %.2f\n", var3); // 10 / 3.1f = 3.23
+var3 = var1 % var2;
+System.out.printf("10 %% 3.1f = %.2f\n", var3); // 10 % 3.1f = 0.70
+var3++;
+System.out.printf("var3++ = %.2f\n", var3); // var3++ = 1.70
+```
