@@ -175,8 +175,28 @@ System.out.println("End");
     * public class Access012 {}
   * 沒有：相同Package下才能使用
     * class Access013 {}
+
+## 16 存取修飾字實作驗證
+* https://www.youtube.com/watch?v=ijBxL354Phc&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=16&t=3s
 * 類別中 (定義類別的大括號內)
   * public：完全公開
   * protected：相同Package及繼承的子類別
   * 沒有：相同Package
   * private：同類別
+
+
+## 17 建構式的核心觀念
+* https://www.youtube.com/watch?v=3gPKFsBD-ZE&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=17
+* 任何類別一定會有建構式
+* 沒有定義建構式的類別
+  * 將會在編譯時期以父類別無傳參數建構式為其唯一建構式
+  * 如果父類別不存在無傳參數建構式，則將編譯失敗
+* 建構式並不會繼承給子類別
+* 基本型別的第一次給值就是初始化
+* 物件的第一次給值是new出指定建構式
+* 任何建構式在於確保任何物件產生時，會將所有父類別物件實體也產生
+  * 也因此才會有繼承的特性
+
+## 18 物件實體建構觀念
+* https://www.youtube.com/watch?v=SGvkjFwDSqk&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=18
+* 
