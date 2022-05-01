@@ -58,3 +58,25 @@ System.out.println(var3);
 * https://www.youtube.com/watch?v=wnkefVByIz4&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=8
 * byte的範圍-128~127之間
 * short的範圍-32768~32767之間
+
+### 基本與參考資料型態差異
+* https://yubin551.gitbook.io/java-note/basic_java_programming/datatype/primitive_reference_difference
+* 記憶體區間：在執行時期可分為三個部份
+  * 1.Global 全域：
+    * 用來放全域變數(global variable)、靜態變數(static variable)。
+  * 2.Stack 堆疊區：
+    * 作業系統會自動化管理這個區塊，而要讓系統可以清楚的管理這些資訊，代表裡面存放的東西必須事先可以被計算好它的生命週期。這個區塊主要用來存放：區域變數(local variable)、方法的參數(method parameter)與方法的回傳位址(method return address)等。
+    * 上述這些東西在編譯時期就可以決定好生命週期，所以系統會管理什麼時候要回收資源。如果Stack區不夠用或是遞回涵式(recursive function)沒寫好，會產 StackOverflowError 。
+``` java
+// 基本資料型態的宣告及給值： (int為例)
+int value ;
+value = 10;
+```
+  * 3.Heap 堆積區：
+    * 可以被預測的資料放在堆疊區(Stack Memory)，而不可被預測的資料就放在堆積區(Heap Memory)。很多時候程式在執行時期才會知道要使用多少記憶體，而且該區塊的記憶體不知道什麼時候會不需要使用，通常透過new關鍵字的東西會被存放在這邊(c++也是，c的話就是malloc()及calloc()。)
+    * 這裡的資料系統不會自動回收，所以隨著程式執行記憶體會越來越少，所以程式設計師必須自行管理此區的記憶體，但Java有『Garbage Collection 垃圾回收』機制，會幫你檢查哪部份的記憶體已不在使用，就會幫你釋放那部份的記憶體空間。倘若Heap區記憶體不夠用，會產生OutOfMemoryError。
+``` java
+// 參考資料型態的宣告及給值： (假設有個自訂類別Human)
+Human tina;
+tina = new Human();
+```
