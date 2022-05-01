@@ -19,6 +19,23 @@
     * 執行程式 Run>Run as>Java Application
 * IntelliJ：
 
+## 1 Java 建置開發環境 (一) 瞭解所需工具
+* https://www.youtube.com/watch?v=2pCUIryNx0I&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=1&t=2s
+* 命令列程式語言
+* Java SE(standard version) => Java標準版本
+  * JDK(Java Develop Kit) => Java開發工具
+    * 內含JRE(Java Runtime Environment) => Java執行環境
+  * JRE(Java Runtime Environment) => Java執行環境(不需要開發時)
+* IDE(Integrated Develop Environment) => 整合開發環境
+  * NetBeans => Apache
+  * Eclipse
+
+## 2 Java 建置開發環境 (二) 下載所需要的檔案
+* https://www.youtube.com/watch?v=BciK_NlTN5g&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=2
+* 1.搜尋Java JDK
+  * 下載8的版本
+* 2.搜尋Eclipse下載
+
 ## 4 基本型別與變數
 * https://www.youtube.com/watch?v=S7yyN7Ev2ZY&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=4
 * 變數型別關鍵字 byte
