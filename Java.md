@@ -199,4 +199,26 @@ System.out.println("End");
 
 ## 18 物件實體建構觀念
 * https://www.youtube.com/watch?v=SGvkjFwDSqk&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=18
-* 
+* 物件初始化
+  * 物件被new呼叫建構式
+  * new 建構式
+* new
+  * 產生物件實體
+  * 回傳記憶體的存取位址
+* 建構式
+  * 進行該物件的初始化
+* 建構式意義
+  * 1.確保祖宗八代都在定義
+  * 2.將該物件的一些屬性方法呼叫都在此時初始執行它，進行初始化
+
+## 19 Overloading(覆載)的意義
+* https://www.youtube.com/watch?v=xrvppuSreNk&list=PLzH33jxgvsncJIRlerW8Ll8S25v1RTjJJ&index=19
+* 類別方法的特性
+  * 直覺性的程式呼叫
+  * 所以方法名稱一樣
+  * 但是參數列不一樣
+    * 個數
+    * 型別
+* 並不在意的是
+  * 存取修飾字
+  * 傳回值型別
