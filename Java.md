@@ -1,5 +1,10 @@
 * 文字教學
 * https://yubin551.gitbook.io/java-note/
+* Java程式設計教學 (新手)
+* https://www.youtube.com/playlist?list=PLTb8yNz82VDW-Ka3DMZUvhf16zZCPFiGe
+* Java程式設計教學 (初級)
+* https://www.youtube.com/playlist?list=PLTb8yNz82VDVmwVPKbrylbitOnXZRlxFo
+* 
 * Java物件導向程式設計
 
 ## 1-1 程式
